@@ -2,74 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Terms of Service | Pickup and Play</title>
+  <title>Terms of Service | Pickup & Play</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MY23D13ZNL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MY23D13ZNL');
+  </script>
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-      background: #f4f4f4;
-      color: #333;
-    }
-    .container {
+    .legal-container {
       max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 120px auto 60px;
+      background: var(--bg-color);
+      padding: 3rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
-    h1, h2, h3 {
-      color: #007bff;
+    
+    .legal-container h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
     }
-    p {
-      margin-bottom: 1em;
+    
+    .legal-container h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin: 2rem 0 1rem;
     }
-    a {
-      color: #007bff;
+    
+    .legal-container h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin: 1.5rem 0 0.75rem;
+    }
+    
+    .legal-container p {
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+    }
+    
+    .legal-container ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
+    }
+    
+    .legal-container ul li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .legal-container a {
+      color: var(--primary-color);
       text-decoration: none;
+      transition: var(--transition);
     }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    
+    .legal-container a:hover {
+      color: var(--secondary-color);
     }
-    li {
-      margin-bottom: 0.8em;
-    }
-    /* Footer */
-    footer {
-      background: var(--primary-color);
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-    footer p {
+    
+    .legal-date {
+      display: inline-block;
+      background: var(--light-gray);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
       font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
     }
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      .hero p {
-        font-size: 1rem;
-      }
-      nav .container {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 0.5rem;
-      }
+    
+    .legal-container strong {
+      font-weight: 600;
+      color: var(--text-color);
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo"><a href="index.html">Pickup & Play</a></div>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it Works</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="legal-container">
     <h1>Terms of Service</h1>
-    <p><strong>Effective Date:</strong> 04/15/2025</p>
-    <p>Welcome to Pickup and Play! These Terms of Service ("Terms") govern your access to and use of our mobile application and website (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, you may not access or use the Service.</p>
+    <div class="legal-date">Effective Date: 04/15/2025</div>
+    <p>Welcome to Pickup & Play! These Terms of Service ("Terms") govern your access to and use of our mobile application and website (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, you may not access or use the Service.</p>
     
     <h2>1. Acceptance of Terms</h2>
     <p>By using the Service, you confirm that you are at least 18 years old. Your use of the Service constitutes your agreement to comply with these Terms and all applicable laws. Additional terms may apply to specific features and will be provided where relevant.</p>
@@ -92,9 +132,9 @@
     
     <h2>4. Events and Participation</h2>
     <h3>a. Company-Sponsored Events</h3>
-    <p>From time to time, Pickup and Play LLC may host or promote events directly. While we aim to ensure a safe and enjoyable experience, participation in these events is entirely voluntary and at your own risk. We disclaim liability for any injuries, losses, or incidents occurring at or related to company-hosted events, to the fullest extent permitted by law.</p>
+    <p>From time to time, Pickup & Play LLC may host or promote events directly. While we aim to ensure a safe and enjoyable experience, participation in these events is entirely voluntary and at your own risk. We disclaim liability for any injuries, losses, or incidents occurring at or related to company-hosted events, to the fullest extent permitted by law.</p>
     <h3>b. Platform Role</h3>
-    <p>Pickup and Play LLC provides a platform only. We do not organize, supervise, or endorse any events. Participation is entirely at your own risk.</p>
+    <p>Pickup & Play LLC provides a platform only. We do not organize, supervise, or endorse any events. Participation is entirely at your own risk.</p>
     <h3>c. Liability Disclaimer</h3>
     <p>We disclaim all liability for physical injury, misconduct, or missed events. All responsibility lies with users.</p>
     
@@ -111,10 +151,10 @@
     <p>We store user data using Firebase and do not share or sell your personal data. For more information, refer to our Privacy Policy.</p>
     
     <h2>9. Limitations of Liability</h2>
-    <p>Pickup and Play LLC is not responsible for any indirect, incidental, or consequential damages related to your use of the Service or participation in events. The platform is provided "as is" and without warranties.</p>
+    <p>Pickup & Play LLC is not responsible for any indirect, incidental, or consequential damages related to your use of the Service or participation in events. The platform is provided "as is" and without warranties.</p>
     
     <h2>10. Intellectual Property</h2>
-    <p>All content and features of the Service are the exclusive property of Pickup and Play LLC or its licensors. Unauthorized use is prohibited.</p>
+    <p>All content and features of the Service are the exclusive property of Pickup & Play LLC or its licensors. Unauthorized use is prohibited.</p>
     
     <h2>11. Governing Law</h2>
     <p>These Terms are governed by the laws of the State of Texas, USA, without regard to its conflict of laws principles.</p>
@@ -124,19 +164,54 @@
     
     <h2>13. Contact Us</h2>
     <p>If you have questions or concerns, contact us at:</p>
-    <p>Email: <a href="mailto:mail@pickupandplay.app">mail@pickupandplay.app</a></p>
+    <p><a href="mailto:mail@pickupandplay.app">mail@pickupandplay.app</a></p>
     
-    <p>By accessing or using Pickup and Play, you confirm you have read, understood, and agree to these Terms of Service.</p>
+    <p>By accessing or using Pickup & Play, you confirm you have read, understood, and agree to these Terms of Service.</p>
   </div>
+  
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Pickup and Play. All rights reserved.</p>
-    <p>
-        <a href="index.html">Home</a> | 
-        <a href="terms.html">Terms of Service</a> | 
-        <a href="privacy.html">Privacy Policy</a> | 
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Pickup & Play</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How it Works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:mail@pickupandplay.app">mail@pickupandplay.app</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Pickup & Play. All rights reserved.</p>
+      <p>
+        <a href="terms.html">Terms</a> | 
+        <a href="privacy.html">Privacy</a> | 
         <a href="disclaimer.html">Disclaimer</a>
-    </p>
-    <p>Domain: pickupandplay.app</p>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
