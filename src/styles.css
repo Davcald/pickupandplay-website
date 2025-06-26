@@ -234,7 +234,6 @@ nav a:hover {
 }
 
 .app-store-button::before {
-  content: 'COMING SOON';
   position: absolute;
   top: 0;
   left: 0;

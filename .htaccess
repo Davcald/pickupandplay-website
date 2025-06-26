@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^download/?$ https://apps.apple.com/us/app/pickup-and-play/id6744983045 [R=302,L] 
